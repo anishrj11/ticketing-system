@@ -1,0 +1,193 @@
+<html>
+<title>BillChair Payment Desk | Powered by IBI</title>
+<head>
+<script src="js/payment.js"></script>
+<link href='//fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+<style>
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+	width: 800px;
+	
+}
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border: none;
+	width: 800px
+	}
+table {
+    border-collapse: collapse;
+	padding: 15px;
+	
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}	
+
+input[type=submit] {
+    background-color: #0000ff;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+<br><br><br>
+<table border="1" width="70%" cellpadding=50 align="center" bgcolor="white">
+<tr>
+<td>
+<center><img src=""></center>
+<center><h2>Payment Gateway</h2></center>
+<br>
+<br>
+<center>
+<div class="tab">
+  <center>
+  <button class="tablinks" onclick="openCity(event, 'credit')" id="defaultOpen">Credit Card</button>
+  <button class="tablinks" onclick="openCity(event, 'netbanking')">Net Banking</button>
+  <button class="tablinks" onclick="openCity(event, 'atm+pin')">ATM + PIN / Debit Card</button>
+  <button class="tablinks" onclick="openCity(event, 'upi')">UPI (PhonePe)</button>
+  </center>
+</div>
+
+<!--Pay M1-->
+
+  <div id="credit" class="tabcontent">
+  <h3>Pay Via Credit Card</h3>
+  <form action="#" method="post">
+<table border="0" width="50%">
+<tr>
+<td>
+Card Number
+</td>
+<td>
+<input type="text" name="cardnumber" placeholder="Card Number">
+</td>
+</tr>
+<tr>
+<td>
+Name on Card  
+</td>
+<td>
+<input type="text" name="cardname" placeholder="Name on Card">
+</td>
+</tr>
+<tr>
+<td>
+Validity
+</td>
+<td>
+<input type="number" name="validity" placeholder="MM/YY">
+</td>
+</tr>
+</table>
+<br>
+  <input type="submit" class="button" value="Pay"> 
+  </form>
+  </div>
+  
+<!--Pay M2-->
+  
+  <div id="netbanking" class="tabcontent">
+  <h3>Pay Via Net Banking</h3>
+  <form action="" method="post">
+  Select Your Bank &nbsp 
+  <select>
+  <option value="sbi">State Bank of India</option>
+  <option value="axis">Axis Bank</option>
+  <option value="pnb">Punjab National Bank</option>
+  <option value="hdfc">HDFC Bank</option>
+</select>
+<br><br>
+  <input type="submit" class="button" value="Pay"> 
+</form>
+  </div>
+  
+<!--Pay M3-->
+   <div id="atm+pin" class="tabcontent">
+  <h3>Pay Via Debit Card</h3>
+  <form action="#" method="post">
+  <table border="0" width="50%">
+    <tr>
+    <td>
+      Select Your Bank
+    </td> 
+    <td>
+     <select>
+       <option value="sbi">State Bank of India</option>
+      <option value="pnb">Punjab National Bank</option>
+       <option value="axis">Axis Bank</option>
+       <option value="hdfc">HDFC Bank</option>
+       <option value="icici">ICICI Bank</option>
+
+       </select>  
+       </td>
+       </tr>
+<tr>
+<td>
+Card Number
+</td>
+<td>
+<input type="text" name="cardnumber" placeholder="Card Number">
+</td>
+</tr>
+<tr>
+<td>
+Name on Card  
+</td>
+<td>
+<input type="text" name="cardname" placeholder="Name on Card">
+</td>
+</tr>
+<tr>
+<td>
+Validity
+</td>
+<td>
+<input type="number" name="validity" placeholder="MM/YY">
+</td>
+</tr>
+</table>
+
+  <br> 
+  <input type="submit" class="button" value="Pay"> 
+  </form>
+  </div>
+  
+<!--Pay M4-->
+  <div id="upi" class="tabcontent">
+  <h3>Pay Via PhonePe</h3>
+  <form action="https://www.phonepe.com" method="post">
+
+  <input type="submit" class="button" value="Pay"> 
+</form>
+  </div>
+   </td>
+   </tr>
+   </table>
+  
+</body>
+</html>

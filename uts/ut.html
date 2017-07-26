@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+
+<title>UNRESERVED TICKETING WINDOW | RailConcept</title>
+
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Taxi Booking Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+<!-- //Meta-Tags -->
+
+<!-- Custom-Style-Sheet -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all">
+<!-- //Custom-Style-Sheet -->
+
+<!-- Fonts -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" type="text/css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700"			   type="text/css" media="all">
+<!-- //Fonts -->
+
+</head>
+<!-- //Head -->
+
+
+
+	<!-- Body -->
+	<body>
+		<br> <br>
+		<center><img src="images/utslogo.jpg" alt="UNRESERVED <em> TICKETING </em> PORTAL"></center>
+		<br>
+		<div class="containerw3layouts-agileits">
+
+			<h2>To Book Your Daily Travel Ticket / Suburban Ticket, Enter Your Details</h2>
+		
+
+			<div class="w3layoutscontactagileits">
+				<form action="payment/pay.html" method="post">
+
+					<div class="wthreename agileinfow3ls">
+						<div class="wthreename-lable wthreelable">
+							<label>Name</label><span class="colon">:</span>
+						</div>
+						<div class="wthreename-input wthreeinput">
+							<input class="top" type="text" name="name" placeholder="Name" required="">
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div class="agileemailinfo agileinfow3ls">
+						<div class="agileemailinfo-lable wthreelable">
+							<label>Email</label><span class="colon">:</span>
+						</div>
+						<div class="agileemailinfo-input wthreeinput">
+							<input class="top" type="email" name="email" placeholder="Email" required="">
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					<div class="aitsphonew3ls agileinfow3ls">
+						<div class="aitsphonew3ls-lable wthreelable">
+							<label>Phone</label><span class="colon">:</span>
+						</div>
+						<div class="aitsphonew3ls-input wthreeinput">
+						
+							<input class="agileinfomobile" type="text" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" name="Mobile Number" required="">
+						</div>
+						<div class="clear"></div>
+					</div>
+
+						<div class="aitspickupaddress agileinfow3ls">
+						<div class="aitspickupaddress-lable wthreelable">
+							<span class="agilepickup-lable">
+								<label>Passenger</label>
+								<label>Address</label>
+							</span>
+							<span class="colon">:</span>
+						</div>
+						<div class="aitspickupaddress-input wthreeinput">
+							<textarea name="Pickup Address" placeholder="Passenger Address" required=""></textarea>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					
+					<div class="agileinfodeparture agileinfow3ls">
+						<div class="agileinfodeparture-lable wthreelable">
+							<span class="lable">
+								<label>Travel</label>
+								<label>Date/Time</label>
+							</span>
+							<span class="colon">:</span>
+						</div>
+						<div class="agileinfodeparture-input wthreeinput">
+							<input class="date agileits w3layouts" id="datepicker1" type="text" value="Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
+						</div>
+						<div class="clear"></div>
+					</div>
+
+				
+			
+
+					<div class="w3lsjourneyaits agileinfow3ls">
+						<div class="w3lsjourneyaits-lable wthreelable">
+							<span class="aitsjourney-lable">
+								<label>Train</label>
+								<label>Type</label>
+							</span>
+							<span class="colon">:</span>
+						</div>
+						<div class="w3lsjourneyaits-input wthreeinput">
+							<select name="journey">
+								<option value="single">Second Class</option>
+								<option value="two way">Mail / Express [M/E]</option>
+							</select>
+						</div>
+						<div class="clear"></div>
+					</div>
+					
+							<div class="w3lsjourneyaits agileinfow3ls">
+						<div class="w3lsjourneyaits-lable wthreelable">
+							<span class="aitsjourney-lable">
+								<label>Travel</label>
+								<label>Type</label>
+							</span>
+							<span class="colon">:</span>
+						</div>
+						<div class="w3lsjourneyaits-input wthreeinput">
+							<select name="journey">
+								<option value="single">Economy</option>
+								<option value="two way">Suburban</option>
+							</select>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+					
+					<div class="aitssubmitw3ls">
+						<input type="submit" name="submit" value="MAKE PAYMENT">
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+
+
+
+
+		<!-- Necessary-JavaScript-Files-&-Links -->
+
+			<!-- Default-JavaScript --> <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+			<!-- Date-Picker-JavaScript -->
+				<script src="js/jquery-ui.js"></script>
+				<script>
+					$(function() {
+						$( "#datepicker1,#datepicker2" ).datepicker();
+					});
+				</script>
+			<!-- //Date-Picker-JavaScript -->
+
+		<!-- //Necessary-JavaScript-Files-&-Links -->
+
+
+
+	</body>
+	<!-- //Body -->
+
+</html>
